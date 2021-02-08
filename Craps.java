@@ -39,14 +39,20 @@ public class Craps
             }
             else
             {
-                System.out.println("next round! press <Enter> to roll the dice");
-                in.nextLine();
+
                 int point = total;
                 total = d1.roll() + d2.roll();
+                System.out.println("next round! press <Enter> to roll the dice");
+                in.nextLine();
                 System.out.println("Your next roll is: " + total);
                 while (total != 7 && total != point)
                 {
-                    total = d1.roll() + d2.roll();
+                    
+                    System.out.println("next round! press <Enter> to roll the dice");
+                in.nextLine();
+                
+                total = d1.roll() + d2.roll();
+                System.out.println("You rolled a " + total);
                 }
                 if (total == point)
                 {
@@ -54,16 +60,18 @@ public class Craps
                 }
                 else if (total == 7)
                 {
+                    
                     System.out.println("You lost...");
                 }
+            }
            System.out.println("Would you like to play again? (y/n)");
            String playAgain = in.nextLine();
            if (playAgain.equals("n"))
            {
+               System.out.println("Goodbye!");
                break;
            }
         }
     }
-}
 }
 
