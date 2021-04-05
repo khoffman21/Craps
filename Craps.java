@@ -75,3 +75,16 @@ public class Craps
     }
 }
 
+
+/* 
+
+COMMENTS FROM THE INSTRUCTOR:
+
+This is a really nice version of this program, Katie. There is a single, 
+small suggestion--having to say that you don't want to read the instructions
+everytime you play is a little annoying. Otherwise, outstanding work!
+
+SCORE: 15/15
+
+*/
+
